@@ -1,7 +1,7 @@
-# Automated-Website-Enumeration-Script
+## Automated-Website-Enumeration-Script
 The Automated Website Enumeration Script is a Bash script designed to automate the process of subdomain enumeration and domain discovery using various popular tools. This script helps security professionals and bug bounty hunters gather extensive subdomain data, remove duplicates, and identify live domains efficiently.
 
-# Features
+## Features
 - Sublist3r: Enumerates subdomains using multiple sources, such as search engines.
 - SubFinder: Uses passive sources to find subdomains quickly.
 - Assetfinder: Extracts subdomains from a wide range of sources.
@@ -10,7 +10,7 @@ The Automated Website Enumeration Script is a Bash script designed to automate t
 - Duplicate Removal: Removes duplicate subdomains to provide a clean list.
 - Alive Check: Uses httpx to identify live domains by following redirects.
 
-# Prerequisites
+## Prerequisites
 Ensure you have the following tools installed:
 - Sublist3r
 - SubFinder
@@ -19,7 +19,7 @@ Ensure you have the following tools installed:
 - Amass
 - httpx
 
-# Installation
+## Installation
 1. **Clone the repository and navigate to the directory:**
    ```bash
         git clone https://Gaurav-Chatribin/Automated-Website-Enumeration-Script/.git
@@ -30,7 +30,7 @@ Ensure you have the following tools installed:
 3. **Set up your directory structure:**
    - Create a directory ~/scripts/target where results will be saved.
 
-# Usage
+## Usage
 
 Run the script by providing the target domain as an argument:
 <pre>
@@ -40,12 +40,12 @@ Run the script by providing the target domain as an argument:
 </pre>
 
 
-# Output
+## Output
 - The script generates the following output files:
     - domains.txt: List of discovered subdomains.
     - alive.txt: List of live subdomains identified by httpx.
 
-# Script Workflow
+## Script Workflow
 1. Starting Subdomain Enumeration: Begins the process by using Sublist3r.
 2. SubFinder: Collects subdomains from various passive sources.
 3. Assetfinder: Adds more subdomains to the list.
@@ -54,8 +54,8 @@ Run the script by providing the target domain as an argument:
 6. Removing Duplicates: Cleans up the output by removing duplicate entries.
 7. Checking Alive Domains: Verifies which subdomains are live using httpx.
 
-# Contributing
+## Contributing
 Feel free to contribute to this project by submitting issues or pull requests. Contributions are welcome to improve the script, add new features, or support additional enumeration tools.
 
-# Disclaimer
+## Disclaimer
 This script is intended for educational and authorized security testing purposes only. Misuse of this script could result in criminal charges. Use responsibly and only on domains that you own or have permission to test.
