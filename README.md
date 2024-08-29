@@ -20,40 +20,41 @@ Ensure you have the following tools installed:
 - httpx
 
 # Installation
-Clone the repository and navigate to the directory:
-'''
-    git clone https://Gaurav-Chatribin/Automated-Website-Enumeration-Script/.git
-    cd automated-website-enumeration-script
-'''
-Copy code
-git clone https://github.com/yourusername/automated-website-enumeration-script.git
-cd automated-website-enumeration-script
-Ensure that all the required tools are installed and available in your system's PATH.
+1. **Clone the repository and navigate to the directory:**
+   ```bash
+        git clone https://Gaurav-Chatribin/Automated-Website-Enumeration-Script/.git
+        cd automated-website-enumeration-script
 
-Set up your directory structure:
+2. **Ensure that all the required tools are installed and available in your system's PATH.**
 
-Create a directory ~/scripts/target where results will be saved.
-Modify the script paths according to your environment if necessary.
+3. **Set up your directory structure:**
+   - Create a directory ~/scripts/target where results will be saved.
 
-Usage
+# Usage
+
 Run the script by providing the target domain as an argument:
-
-bash
-Copy code
+<pre>
+<code class="language-bash">
 ./enumeration_script.sh example.com
-Output
-The script generates the following output files:
-domains.txt: List of discovered subdomains.
-alive.txt: List of live subdomains identified by httpx.
-Script Workflow
-Starting Subdomain Enumeration: Begins the process by using Sublist3r.
-SubFinder: Collects subdomains from various passive sources.
-Assetfinder: Adds more subdomains to the list.
-crt.sh: Extracts subdomains from certificate transparency logs.
-Amass Passive and BruteForce: Combines passive enumeration and brute-forcing for thorough results.
-Removing Duplicates: Cleans up the output by removing duplicate entries.
-Checking Alive Domains: Verifies which subdomains are live using httpx.
-Contributing
+</code>
+</pre>
+
+
+# Output
+- The script generates the following output files:
+    - domains.txt: List of discovered subdomains.
+    - alive.txt: List of live subdomains identified by httpx.
+
+# Script Workflow
+1. Starting Subdomain Enumeration: Begins the process by using Sublist3r.
+2. SubFinder: Collects subdomains from various passive sources.
+3. Assetfinder: Adds more subdomains to the list.
+4. crt.sh: Extracts subdomains from certificate transparency logs.
+5. Amass Passive and BruteForce: Combines passive enumeration and brute-forcing for thorough results.
+6. Removing Duplicates: Cleans up the output by removing duplicate entries.
+7. Checking Alive Domains: Verifies which subdomains are live using httpx.
+
+# Contributing
 Feel free to contribute to this project by submitting issues or pull requests. Contributions are welcome to improve the script, add new features, or support additional enumeration tools.
 
 # Disclaimer
